@@ -21,8 +21,7 @@
                 <a href="#skills" class="header-link">Skills</a>
                 <a href="#education" class="header-link">Education</a>
                 <a href="#works" class="header-link">Experiences</a>
-                <a href="https://github.com/SinghParwinder" class="header-link">
-                    Github</a>
+                <a href="#contact" class="header-link">Contact me</a>
             </nav>
         </header>
         <main>
@@ -118,8 +117,7 @@
                 </div>
             </section>
 
-            <section class="education" id="education" data-aos="fade-up"
-            data-aos-duration="2000">
+            <section class="education" id="education" data-aos="fade-up" data-aos-duration="2000">
                 <h1>Education</h1>
                 <div class="education_contant">
                     <div class="info">
@@ -146,8 +144,7 @@
                 </div>
             </section>
 
-            <section class="works" id="works" data-aos="fade-up"
-            data-aos-duration="2000">
+            <section class="works" id="works" data-aos="fade-up" data-aos-duration="2000">
                 <h1>Work Experiences</h1>
                 <div class="works_contant">
                     <div class="info">
@@ -177,8 +174,25 @@
                 </div>
             </section>
 
-            <section class="contact">
+            <section class="contact" data-aos="fade-up" data-aos-duration="2000" id="contact">
+                <div class="contact_title">
+                    <h1>Contact me</h1>
+                </div>
+                <div class="container">
+                    <form name="contact" netlify>
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your name.." required>
 
+                        <label for="lname">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="exempla@email.com" required>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                            required></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </section>
         </main>
     </div>

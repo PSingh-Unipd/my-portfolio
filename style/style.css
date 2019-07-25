@@ -4,6 +4,10 @@
     color scheme: #FBAB17, #F6F5F3, #50BBB3
 */
 
+html {
+    scroll-behavior: smooth;
+  }
+
 * {
    color: #001f3f;
    font-family: 'Roboto', sans-serif;
@@ -78,6 +82,7 @@ nav {
         margin-left: 0px;
     }
 }
+
 
 /* Styling main section */
 .main {
@@ -188,6 +193,14 @@ nav {
     padding: 20px 5px;
     background-color: #85144b;
     border-radius: 10px;
+
+}
+
+.card:hover, .cover:focus {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 
 .card img {
@@ -219,9 +232,111 @@ nav {
     list-style-type: none;
 }
 
-
 @media screen and (max-width: 950px) {
     .skills_container {
         clip-path: polygon(0 3%, 101% 0%, 101% 98%, 0% 100%);
     }
 }
+
+
+/* Styling education section */ 
+.education {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.education_contant {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.education img {
+    max-width: 350px;
+    flex-grow: 1;
+}
+
+.education .info {
+    text-align: left;
+    max-width: 450px;
+}
+
+.education ul {
+    list-style-type: none;
+}
+
+.education li {
+    padding: 3px 0;
+}
+
+.education h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.education i {
+    color: #FBAB17;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 655px) {
+    .education_contant {
+        flex-direction: column-reverse;
+    }
+    .education img {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* My Works section styling */
+.works {
+    clip-path: polygon(50% 6%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #FBAB17;
+}
+
+.works_contant {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.works img {
+    max-width: 350px;
+    flex-grow: 1;
+}
+
+.works .info {
+    text-align: left;
+    max-width: 450px;
+}
+
+.works ul {
+    list-style-type: none;
+}
+
+.works li {
+    padding: 3px 0;
+}
+
+.works h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.works i {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 655px) {
+    .works_contant {
+        flex-direction: column-reverse;
+    }
+    .works img {
+        margin-bottom: 20px;
+    }
+}
+

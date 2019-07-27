@@ -89,8 +89,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 30px 80px;
-    margin: 30px 0;
+    padding: 80px 30px;
 }
 
 .main_image {
@@ -150,8 +149,7 @@ nav {
 @media screen and (max-width: 600px) {
     .main {
         flex-direction: column;
-        margin: 0;
-        padding: 10px;
+        margin: 10px;
     }
 
     .main_image{
@@ -169,7 +167,7 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px 20px;
+    padding: 80px 30px;
 }
 
 #skills_title {
@@ -241,7 +239,7 @@ nav {
 
 /* Styling education section */ 
 .education {
-    padding: 80px 40px;
+    padding: 80px 30px;
     text-align: center;
 }
 
@@ -292,7 +290,7 @@ nav {
 /* My Works section styling */
 .works {
     clip-path: polygon(50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
-    padding: 80px 40px;
+    padding: 80px 30px;
     text-align: center;
     background-color: #FBAB17;
 }
